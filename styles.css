@@ -1,0 +1,288 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: Monaco, Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  min-height: 200vh;
+  background: linear-gradient(to bottom, #acccf0, #3B75AE, #bed3ea);
+}
+
+/* Header */
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #000000;
+  background: linear-gradient(to bottom, #acccf0, #3B75AE, #bed3ea);
+  background-attachment: fixed;
+}
+
+header h1 {
+  color: #000000;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+  margin: 20px;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.cta-button {
+  display: inline-block;
+  margin: 30px 0; /* Increased for more spacing */
+  padding: 15px 30px; /* Increased padding for a larger button */
+  font-size: 1.25rem; /* Increased font size for better readability */
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 8px; /* Slightly larger border radius for a softer look */
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Features Section */
+.feature-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  transition: transform 0.3s;
+  width: 100%;
+}
+
+.feature-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-image {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-text {
+  flex: 10;
+}
+
+.feature-text h3 {
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+.feature-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* How It Works Section */
+.flowchart {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.step {
+  flex: 1;
+  background: #acccf0;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  max-width: 250px;
+  transition: transform 0.3s;
+}
+
+.step:hover {
+  transform: scale(1.05);
+}
+
+/* Marketplace Section */
+#marketplace table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#marketplace table th, #marketplace table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#marketplace table th {
+  background-color: #3B75AE;
+  color: white;
+}
+
+/* About Us Section */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.team-member {
+  background-color: #acccf0;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.4s;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Contact Us Section */
+.contact-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* Footer Section */
+footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
